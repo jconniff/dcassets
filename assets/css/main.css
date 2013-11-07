@@ -1,0 +1,955 @@
+
+body .main .hide {
+	display: none;
+}
+
+body {
+	font: 13px/1.25 "Helvetica Neue",Helvetica,Arial;
+	background-color: #FAFAFC;
+	color: #5F5F5F;
+}
+
+input::-webkit-input-placeholder { font-style: italic; }
+input::-moz-placeholder { font-style: italic; }
+input::-ms-input-placeholder { font-style: italic; }
+textarea::-webkit-input-placeholder { font-style: italic; }
+textarea::-moz-placeholder { font-style: italic; }
+textarea::-ms-input-placeholder { font-style: italic; }
+
+#footer {
+    font-size: 80%;
+    padding: 0.3em;
+}
+#footer li {
+	margin-bottom: 1em;
+	color: #B8B8B8;
+}
+#footer a {
+	color: #B8B8B8;
+}
+#footer .version {
+    margin-left: 1em;
+    cursor: default;
+}
+
+#nav-left {
+	margin-bottom: 2.3em;
+}
+#nav-left a {
+	color: #1D1DA3;
+	font-size: 115.4%;
+}
+#nav-left li {
+	margin: 0 0 0.9em;
+}
+a, a:visited {
+    color: #324FE1;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+}
+.pure-button:hover {
+	text-decoration: none;
+}
+.pure-button {
+	padding: 0.5em 1.5em 0.5em;
+}
+.header {
+	transition: box-shadow 0.3s;
+	-webkit-transition: box-shadow 0.3s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #FAFAFC;
+	box-shadow: 0 0 17px rgba(0,0,0,0.5);
+	/* needed to keep header on top of page-body scrolling under */
+	z-index: 1;
+}
+.header-window-scrolled-at-top .header {
+	box-shadow: none;
+}
+.top-band {
+	position: relative;
+	background-color: #2D1152;
+}
+.top-band a,
+.top-band a:visited {
+	color: #fff;
+}
+.img-sprite {
+    background-image: url("../images/sprite_vitality.png");
+    background-repeat: no-repeat;
+}
+.img-thumb {
+    width: 40px;
+    border: 0px;
+    border-radius: 5px;
+}
+#home-icon {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	background-position: -70px 0;
+    height: 16px;
+    margin: 0 0.5em 0 1.6em;
+    vertical-align: middle;
+    width: 16px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top-band li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0.2em 3em 0.2em 0.3em;
+}
+.masthead,
+.page-body {
+    margin: auto;
+    max-width: 1500px;
+    min-width: 980px;
+}
+.page-body {
+	margin-top: 69px;
+}
+.masthead .pure-form input {
+    height: 2.1em;
+    width: 280px;
+    padding-left: 0.5em;
+}
+.masthead .empty-search {
+	font-style: italic;
+	color: #707070;
+}
+.masthead .pure-form button {
+	color: #fff;
+    background-color: #324FE1;
+    border-color: #1d1da3;
+    height: 2.3em;
+	font-size: 120%;
+}
+.masthead .col-middle fieldset {
+	padding: 0;
+}
+.masthead .search-box {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.5em 1em 0.5em 0;
+}
+.search-box #input-search {
+    padding: 0.27em 0.8em;
+    width: 28em;
+}
+
+.masthead .logo {
+	position: relative;
+	background: url("../images/logo_385x33_beta.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	*display: inline;
+	*zoom: 1;
+	color: #6D3995;
+	/*line-height: 1.7;*/
+	width: 385px;
+	height: 33px;
+	cursor: pointer;
+	margin: 0.5em 1em 0.5em 0;
+}
+/* triggers a tooltip */
+.logo .missing {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 67%;
+}
+#user {
+	position: absolute;
+	top: 0.2em;
+	right: 0;
+}
+
+/* masthead grid */
+.masthead .col-left {
+	width: 0%;
+}
+.masthead .col-middle {
+	/*margin-left: 23%;*/
+	width: 100%;
+}
+/* column margins in grid */
+.col-left .content { /* need separate div for adding margins to grid */
+}
+.col-middle .content { /* need separate div for adding margins to grid */
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.col-right .content { /* need separate div for adding margins to grid */
+	margin: 4em 2em 4em 0;
+}
+
+/* workflow indicators */
+.edit-buttons {
+	position: absolute;
+/*    background-color: #abc;*/
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding: 0;
+    margin: 0.5em 0;
+}
+/*.btn-edit-mode {
+	background-color: transparent;
+	color: #5f5f5f;
+	display: inline-block;
+	font-size: 100%;
+	width: auto;
+	vertical-align: top;
+	border: 1px solid #cbced9;
+}
+*/
+.btn-edit-mode-primary {
+	color: #fff;
+	background-color: #324FE1;
+	border-color: #1d1da3;
+}
+.search-results .btn-add-primary {
+	background-color: #1CB841;
+	border-color: #1CB841;
+	color: #FFFFFF;
+}
+
+
+
+/* middle column search-results */
+.search-results,
+.product-details {
+}
+.search-results .product-list-item {
+	border-bottom: 1px solid #E4E4EC;
+	padding: 0.4em 0 0.7em;
+}
+.search-results .item-left,
+.search-results .item-right {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.search-results .item-right .content {
+	border: none;
+	padding: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+.search-results .item-left .content {
+	margin-left: 0;
+	margin-right: 1em;
+}
+.search-results .backyard-section-head {
+    line-height: 1;
+    padding: 0.9em 0 1.2em;
+    font-weight: 300;
+    color: #3F3F3F;
+    font-size: 138.4%;
+    text-decoration: none;
+}
+
+/* product names */
+.search-results h3,
+dt {
+    color: #324FE1;
+    cursor: pointer;
+    font-size: 125%;
+    margin: 0 0 0.2em;
+}
+dt a:hover {
+	color: #DD4D31;
+}
+.search-results dd {
+	margin: 0 0 1.5em;
+}
+dd .url {
+	color: #1E7D83;
+	font-weight: bold;
+}
+
+.backyard-source {
+	color: #383;
+	font-size: 80%;
+}
+.col-right label,
+.col-middle .search-results label {
+    margin-right: 0.3em;
+    color: #808080;
+}
+
+/* Product Details center column */
+
+.col-middle .content {
+	position: relative;
+}
+.col-middle .product-details > li {
+	margin-bottom: 1.5em;
+	position: relative;
+}
+.col-middle .separator-above {
+	padding: 1em 0 0;
+}
+#breadcrumbs {
+	color: #C1C1C1;
+}
+#breadcrumbs .prod-name {
+	font-weight: bold;
+	color: #5F5F5F;
+}
+
+.breadcrumbs-bricks-title {
+    f/*ont-size: 50%;*/
+    font-weight: normal;
+	color: #C1C1C1;
+}
+.col-middle #hd {
+	width: 100%;
+}
+.col-middle #hd h1 {
+	display: inline-block;
+	vertical-align: middle;
+	color: #3F3F3F;
+	line-height: 1;
+	margin-right: 1em;
+}
+
+/* the "+" by head "All Products" */
+a.add-product {
+    background-color: #1CB841;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 60%;
+    margin-left: 1em;
+    padding: 0 0.25em 0.05em;
+    vertical-align: middle;
+}
+a.add-product:hover {
+	text-decoration: none;
+	background-color: #1CA93B;
+}
+.col-middle #hd .show-all-products {
+	font-size: 50%;
+	margin-left: 1em;
+	font-weight: normal;
+}
+.status {
+	display: inline-block;
+	color: #000;
+	padding: 0.4em 1.1em;
+	margin-bottom: 1em;
+	background-color: #E5E8DE;
+	vertical-align: center;
+	cursor: pointer;
+}
+.status-rt-margin {
+	margin-right: 2em;
+}
+.status .instead {
+	white-space:nowrap;
+}
+.page-body .status-GA {
+	background-color: #E5E8DE;
+}
+.page-body .status-EOL,
+.page-body .status-deprecated {
+	background-color: #D57777;
+    color: #FFFFFF;
+}
+.list-lifecycle {
+    color: #BF6262;
+    display: inline-block;
+    font-size: 70%;
+    margin: 0 0 0 1.1em;
+    vertical-align: middle;
+}
+.product-vitality h3,
+.col-middle .product-details h3 {
+	display: inline-block;
+	font-weight: 300;
+	color: #3F3F3F;
+	margin: 0 0 0.2em;
+	font-size: 138.4%;
+	cursor: default;
+}
+.col-middle .product-details label {
+	display: inline-block;
+	color: #222;
+	margin-right: 0.3em;
+}
+.col-middle .product-details #meta p {
+	margin: 0 0 0.2em;
+}
+.page-body .bullet-list {
+	list-style: disc;
+	margin-left: 1em;
+}
+.page-body .bullet-list li {
+	margin-bottom: 0.3em;
+}
+.actions {
+	text-align: right;
+}
+.actions a.feedback {
+    background: url("../images/feedback_icon.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    padding: 0 0 0 27px;
+    background-size: 20px 19px;
+}
+
+/* product vitality center column */
+div.product-vitality {
+    margin: 2em 0;
+}
+.product-vitality .user {
+    display: inline-block;
+    min-width: 44px;
+    margin: 0;
+}
+.product-vitality .user .img-thumb {
+    width: 30px;
+    height: 30px;
+}
+.product-vitality .user .backyard-id {
+	font-size: 70%;
+}
+.product-vitality .vitality-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+.product-vitality .vote-yes {
+    background-image: url("../images/sprite_vitality.png");
+    background-position: -24px 6px;
+}
+.product-vitality .vote-no {
+    background-image: url("../images/sprite_vitality.png");
+    background-position: -0px 6px;
+}
+.product-vitality .update {
+    background-image: url("../images/sprite_vitality.png");
+    background-position: -48px 6px;
+}
+.product-vitality .bubble {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-left: 0.1em;
+    padding: 0.3em 0.9em;
+    position: relative;
+    vertical-align: top;
+    min-width: 6.2em;
+    max-width: 70%;
+}
+.product-vitality .bubble:after {
+    border-color: transparent #fff transparent;
+    border-style: solid;
+    border-width: 5px 10px 5px 0;
+    content: "";
+    left: -10px;
+    top: 8px;
+    position: absolute;
+}
+.product-vitality .date {
+	font-size: 80%;
+	color: #B8B8B8;
+}
+.vitality-events li {
+	margin: 0.5em 0 1em;
+}
+.vitality-events .vitality-update {
+	color: #000;
+}
+.vitality-events .question {
+	color: #000;
+}
+/* side groups */
+.side-group {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E2E2E6;
+    margin-bottom: 20px;
+    padding: 0.6em 1em;
+}
+#left-list-group { /* overrides .side-group */
+	border-width: 1px 0 0;
+	background-color: transparent;
+	padding: 2em 0 0;
+}
+#left-list-group .more { /* overrides .side-group */
+	text-align: right;
+	font-size: 90%;
+}
+.side-group .hd {
+	font-size: 138.4%;
+	font-weight: 300;
+	color: #3f3f3f;
+	margin: 0 0 0.4em;
+}
+.side-group li {
+	position: relative; /* this needed for .deletable   position: absolute; */
+	margin-bottom: 0.3em;
+}
+/*.feedback .request-access {
+	background: none;
+}*/
+.side-group .missing {
+	color: #B1B1B1;
+	cursor: default;
+	padding-left: 18px;
+}
+.complete-bar {
+	border: 1px solid #E4E4EC;
+}
+.complete-percent em {
+	font-style: normal;
+}
+.complete-bar-fill {
+	height: 1em;
+	width: 75%;
+}
+.complete-bar .lower {
+	background-color: #ff0000;	
+}
+.complete-bar .low {
+	background-color: #FFB200;	
+}
+.complete-bar .high {
+	background-color: #C8C000;	
+}
+.complete-bar .higher {
+	background-color: #00C800;	
+}
+.last-update .img-thumb {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.last-update .date {
+	font-size: 80%;
+	color: #B8B8B8;
+}
+.product-details .missing {
+	padding-left: 18px;
+}
+.col-middle .product-details .missing:before,
+.side-group .missing:before {
+	content: "";
+	color: #f00;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	opacity: 0.5;
+	width: 14px;
+	height: 14px;
+	background: url(../images/icon_not.png) no-repeat;
+}
+.col-middle .product-details .missing:before {
+	top: 0.85em;
+}
+
+.side-group.bricks img {
+	width: 100%;
+}
+.side-group.bricks img:hover {
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/********* Tooltip **********/
+#tooltip .yui3-widget-bd{
+    text-align: left;
+    max-width: 19em;
+    *width: 10em;
+    background-color: #000;
+    color: #fff;
+    padding: 0.9em 1.4em 1.1em;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    cursor: default;
+}
+#tooltip a {
+	color: #8696ED;
+	cursor: pointer;
+}
+#tooltip a:hover {
+	text-decoration: underline;	
+}
+#tooltip .point {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -12px;
+	left: 20px;
+	border-width: 6px;
+	border-bottom-color: #000;
+}
+.main #tooltip .point-center {
+	left: 50%;
+	margin-left: -3px;
+}
+.deletable {
+	background: url("../images/icon_close_15x15.png") no-repeat;
+	background-position: 10% 20%;
+	background-position-x: 10%;
+	background-position-y: 20%;
+
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	height: 47px;
+	opacity: 0.4;
+}
+.product-links .deletable {
+	position: absolute;
+	top: 0;
+	left: 88%;
+}
+
+
+
+/**************************************/
+
+/********** media overrides ***********/
+
+/*	 Device label for testing 
+	.top-band:after {
+		content: "Desktop";
+		position: absolute;
+		top: 0;
+		right: 10px;
+		color: #fff;
+	}
+*/
+
+/* Tablet Landscape & Portrait */ 
+@media only screen
+	and (min-device-width : 768px)
+	and (max-width: 1024px) {
+	/*.top-band {background-color: #808;}
+	.top-band:after {
+		content: "Tablet Land & Port";
+	}*/
+	.masthead,
+	.page-body {
+	    max-width: 95%;
+	    min-width: 10px;
+	}
+	/* 
+	On desktop, page-body auto centered 
+	until it hit a min-width and then it needed
+	some far-left and far-right page margins.
+	page-body is set by % above 
+	so the following col margins are not desired
+	below this point.
+	*/
+	
+/* when added left column nav, the col-middle margin-left was needed still */ 
+	/*.col-middle .content { 
+		margin-left: 0;
+	}*/
+	.col-right .content {
+		margin-right: 0;
+	}
+/*when col-left nav was added, needed to override col-left margin when page-body width controls margins */
+	body .col-left .content {
+		margin-left: 0;
+	}
+	/*.masthead .col-middle .content {
+		margin-right: 0;
+	}*/
+/*	.masthead .logo {
+		background: url(../../images/logo_289x25_beta.png);
+		width: 289px;
+		height: 25px;
+	}
+*/
+	.search-box #btn-search {
+		display: none; /* not needed. "Go" is on soft keyboard */
+	}
+	.search-box #input-search {
+		font-size: 120%;
+		line-height: 1.5em;
+		width: 20em;
+	}
+}
+
+/* Tablet Portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
+	/*.top-band {background-color: #006;}
+	.top-band:after {
+		content: "Tablet Portrait";
+	}*/
+	.masthead .logo {
+		display: block;
+	}
+	.status {
+		display: inline-block;
+	}
+	body {
+		/*font-size: 110%;*/
+	}
+	.page-body {
+	    /*margin-top: 168px;*/
+	}
+	.search-box #input-search {
+		width: 40em;
+	}
+}
+
+/* iphone 4 & 5
+portrait AND landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+	/*.top-band {
+		background-color: #0f0;
+		font-size: 80%;
+	}
+	.top-band:after {
+		content: "iphone4 & 5 Land & Port";
+	}*/
+	.top-band li {
+	    display: inline-block;
+	    margin: 0.2em 1em 0.2em 0.3em;
+	}
+	.search-box #btn-search {
+		display: none; /* not needed. "Go" is on soft keyboard */
+	}
+	.search-box #input-search {
+		font-size: 120%;
+		line-height: 1.5em;
+		width: 20em;
+	}
+	body {
+		font-size: 180%;
+	}
+	.pure-g-r > .pure-u,
+	.pure-g-r > [class*="pure-u-"] {
+    	width: 100%;
+	}
+	.masthead {
+		max-width: 100%;
+	}
+	.masthead .logo {
+		background: url("../images/logo_847x76_beta.png");
+		background-size: 500px 43px;
+		line-height: 1.7;
+		width: 500px;
+		height: 43px;
+		margin-right: 2em;
+		margin-bottom: 0.3em;
+	}
+	.edit-buttons {
+		box-shadow: -5px 8px 10px 1px rgba(0, 0, 0, 0.25);
+		/*padding: 0 0.5em;*/
+		background-color: #FAFAFC;
+		margin: 0;
+		right: 0;
+	}
+	.edit-buttons button {
+		display: block;
+		width: 5em;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		margin: 0.5em;
+	}
+	.page-body {
+		margin-top: 6.5em;
+	}
+	.col-middle .content {
+	    margin-right: 0;
+	}
+	.search-box #input-search {
+	    font-size: 70%;
+	    width: 95%;
+	}
+	.masthead .search-box {
+		display: block;
+	}
+	.col-middle #hd h1 {
+		font-size: 1.6em;
+	}
+	.col-middle #hd {
+	    top: -2em;
+	}
+	.page-body .col-middle .content{
+		margin-right: 1.7em;
+		margin-top: 0;
+	}
+	.page-body .col-right .content{
+		margin-left: 1.7em;
+		margin-top: 0;
+	}
+	.col-middle .search-results .item-left .content{
+		margin-bottom: 0.7em;
+	}
+	a.btn-edit-mode {
+	    /*padding: 0.4em 1.5em 0.5em;*/
+	}
+	.btn-edit-mode {
+	    font-size: 80%;
+	}
+	.page-body .deletable {
+		background: url("../images/icon_close_40x40.png") no-repeat;
+		width: 100px;
+		height: 120px;
+	}
+	.pure-form .side-group li input {
+		width: 73.5%;
+	}
+	.product-links .deletable {
+		top: 1.2em;
+		left: 77%;
+	}
+	.page-body #meta label {
+		display: block;
+		text-align: left;
+		margin-top: 0.5em;
+	}
+	.page-body #meta input {
+    	width: 70%;
+	}
+	.page-body #description textarea,
+	.page-body .top-customers textarea,
+	.page-body .dont-use-list textarea,
+	.page-body .use-list textarea {
+    	width: 70%;
+	}
+	.feedback a {
+		display: none;
+/*		background-size: 40px 39px;
+		height: 45px;
+	    padding: 0 0 0 57px;
+	    background-position: 0 8px;
+	    margin-right: 2em;
+*/	}
+
+	/* begin bricks */
+	.page-body {
+		position: relative;
+	}
+	.side-group.bricks {
+		width: 50%;
+	}
+	/*
+	.side-group.bricks {
+	    height: 3.5em;
+	    position: absolute;
+	    right: 5%;
+	    top: 0;
+	    padding-top: 0;
+	}
+
+	.side-group.bricks .hd {
+	    color: #3F3F3F;
+	    font-size: 60%;
+	   }
+
+	#link-bricks-diagram { 
+	    height: 2.7em;
+	    overflow: hidden;
+	    display: inline-block;
+	}
+	.side-group.bricks img {
+	    width: 100%;
+	}
+	 end bricks */
+
+	.side-group .missing {
+		padding-left: 44px;
+	}
+	.product-details .missing {
+		padding-left: 44px;
+	}
+	.col-middle .product-details .missing:before,
+	.side-group .missing:before {
+		position: absolute;
+		left: 0;
+		top: 0.1em;
+		width: 40px;
+		height: 40px;
+		background: url(../images/icon_not_40x40.png) no-repeat;
+	}
+	.col-middle .product-details .missing:before {
+		top: 1em;
+	}
+
+}
+/* iPhone 4 & 5 landscape only*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+and (orientation : landscape) {
+	/*.top-band {
+		background-color: #770;
+		font-size: 80%;
+	}
+	.top-band:after {
+		content: "iphone4 & 5 Landscape";
+	}*/
+	.edit-mode .side-group li {
+		width: 100%;
+	}
+	.side-group li {
+		width: 45%;
+		margin-right: 4%;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 0.9em;
+	}
+	.page-body .deletable {
+		background: url("../images/icon_close_40x40.png") no-repeat;
+		width: 80px;
+		height: 80px;
+		left: 74.5%;
+	}
+	.side-group .missing:before {
+		top: 0em;
+	}
+	.col-middle .product-details .missing:before {
+		top: 0.8em;
+	}
+}
+
+/* iPhone4 & 5 portrait only*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+and (orientation : portrait) {
+	/*.top-band {
+		background-color: #80f;
+		font-size: 80%;
+	}
+	.top-band:after {
+		content: "iPhone4 & 5 portrait";
+		font-size: 70%;
+	}*/
+	body {
+		font-size: 250%;
+	}
+	.page-body {
+		margin-top: 6em;
+	}
+}
+
